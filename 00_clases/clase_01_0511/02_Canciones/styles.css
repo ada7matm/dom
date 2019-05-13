@@ -1,0 +1,16 @@
+nav, .card-header, .btn {
+    background-color: #BC3B69;
+}
+
+.card-header {
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    border-color: #BC3B69;
+}
+
+.btn:hover, .btn:active {
+    background-color: rgb(151, 47, 83) !important;
+}
