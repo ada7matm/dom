@@ -1,5 +1,10 @@
-nav, .btn {
+nav, .card-header, .btn {
     background-color: #BC3B69;
+}
+
+.card-header {
+    color: white;
+    font-weight: bold;
 }
 
 .btn {
