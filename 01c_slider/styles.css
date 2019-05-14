@@ -1,0 +1,39 @@
+html, body {
+    background-color: #BC3B69;
+    height: 100%;
+    font-family: Roboto;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    border: 5px solid white;
+    box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+}
+
+.arrow {
+    font-size: 40px;
+    color: white;
+    margin: 0 20px;
+}
+
+.hidden {
+    display: none;
+}
