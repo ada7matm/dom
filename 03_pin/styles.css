@@ -14,10 +14,14 @@ body {
 
 h1 {
     font-size: 120px;
-    line-height: 144px;
+    line-height: 104px;
     height: 144px;
-    color: white;
     text-align: center;
+    background-color: #dee0e0;
+    border-radius: 70px;
+    width: 610px;
+    padding: 20px 25px;
+    box-sizing: border-box;
 }
 
 .container {
