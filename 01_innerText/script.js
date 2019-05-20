@@ -1,10 +1,21 @@
-/**
- * - Declarar la funcion cambiarTexto, que debe
- * pedir en un prompt por un texto a agregar,
- * y modificar el elemento con id "title" con
- * el texto del prompt
- * - Declarar la funcion borrarTexto, que debe
- * modificar el elemento con id "title", poniendole
- * un string vacio como html
- * - Bindear los botones con las funciones correspondientes
- */
+let pago = parseInt(prompt("Ingrese cantidad a pagar"));
+
+let aplicarIva = function() {
+    pago = pago + 0.21 * pago;
+}
+
+let aplicarInteres = function() {
+    aplicarIva();
+    pago += 0.1 * pago;
+}
+
+let aplicarDescuento = function() {
+    aplicarInteres();
+    pago -= 0.25 * pago;
+}
+
+aplicarDescuento();
+
+console.log(pago);
+
+
