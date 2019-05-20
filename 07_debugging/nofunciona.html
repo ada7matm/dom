@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chips & Snacks</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Chips & Snacks</h1>
+    <div class="contenedor-items">
+        <h2>🛒 Por favor seleccione su pedido</h2>
+        <div class="contenedor-snacks">
+            <div class="snack">
+                <h3>🍪 <span id="contador-cookies">0</span> Cookies</h3>
+                <div class="botones">
+                    <div class="boton" onclick="incrementarCookies()">+</div>
+                    <div class="boton" onclick="reducirCookie()">-</div>
+                </div>
+            </div>
+            <div class="snack">
+                <h3>🍨 <span id="contador-helados">0</span> Helados</h3>
+                <div class="botones">
+                    <div class="boton" onclick="incrementarHelados()">+</div>
+                    <div class="boton" onclick="reducirHelados()">-</div>
+                </div>
+            </div>
+            <div class="snack">
+                <h3>🍫 <span id="contador-chocolates">0</span> Chocolates</h3>
+                <div class="botones">
+                    <div class="boton" onclick="incrementarHelados()">+</div>
+                    <div class="boton" onclick="reducirChocolates()">-</div>
+                </div>
+            </div>
+            <div class="snack">
+                <h3>🍬 <span id="contador-caramelos">0</span> Caramelos</h3>
+                <div class="botones">
+                        <div class="boton" onclick="incrementarCaramelos">+</div>
+                        <div class="boton" onclick="reducirCaramelos">-</div>
+                </div>
+            </div>
+        </div>
+        <div class="boton boton-largo" onclick="reiniciar()">↩️ Reiniciar</div>
+        <div class="boton boton-largo" onclick="mostrarResumen()">✔️ Pagar</div>
+    </div>
+    <div class="contenedor-resumen" id="resumen">
+        <div class="cerrar">❌</div>
+        <h2>📝 Resumen pedido</h2>
+        <div class="contenedor-total">
+            <div id="detalle"></div>
+            <div id="tarjeta" onclick="usarTarjeta()">💳 Usar tarjeta de Chips & Snacks</div>
+            <h2>Total <span id="total">$0</span></h2>
+        </div>
+    </div>
+</body>
+</html>
