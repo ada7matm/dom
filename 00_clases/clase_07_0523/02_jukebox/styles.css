@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Intro";
+    src: url("IntroDemo-BlackCaps.otf");
+}
+
+@font-face {
+    font-family: "Intro Inline";
+    src: url("IntroDemo-BlackCapsInline.otf");
+}
+
+html {
+    background-image: linear-gradient(to bottom, #A6206A, #EC1C4B, #F16A4B, #F7D969, #2F9395);
+    height: 200vh;
+    font-family: "Intro";   
+}
+
+body {
+    background-image: url("jukebox.png");
+    background-position-y: 40px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    height: 200vh;
+    margin: 0;
+}
+
+.songs {
+    width: 370px;
+    height: 280px;
+    position: absolute;
+    transform: translateY(130%);  
+    border-top-right-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    background-image: linear-gradient(to bottom, #5eb9bf, #26635f, #0c5754);
+    padding: 20px;
+    border: 3px solid white;
+    border-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: -360px;
+    transition: left .8s;
+}
+
+.songs:hover {
+    left: 0;
+}
+
+.song {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5a0c1;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 5px solid #C2141E;
+    transition: background-color .6s, width .3s ease-out;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 25px;
+    user-select: none;
+}
+
+.song:hover {
+    background-color: #ffd000;
+    width: 330px;
+}
+
+.song::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, transparent, #EF2B7D);
+    position: absolute;
+    top: 0;
+    border-radius: 25px
+
+}
+
+.song span {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: block;
+}
+
+img {
+    position: absolute;
+    width: 400px;
+    left: 20px;
+    animation: rotate 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#playing {
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    top: 50px;
+    left: 200px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    border: none;
+    font: normal 60px/1 "Monoton", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+
+    -webkit-transition: text-shadow 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -moz-transition: text-shadow 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -o-transition: text-shadow 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    transition: text-shadow 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+      
+    #playing:hover {
+        text-shadow: 0 0 10px rgb(255,255,255) , 0 0 20px rgb(255,255,255) , 0 0 30px rgb(255,255,255) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+
+    }
