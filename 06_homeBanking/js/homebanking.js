@@ -36,7 +36,7 @@
  *      luego llamar a salir
  * 3) Bindear los botones de acciones con cada una de las acciones correspondientes
  * 4) Las funciones depositarDinero, extraerDinero y cambiarLimiteExtraccion, deben 
- * ir registrando su actividad, appendeando al elemento con id ultimos-movimientos 
+ * ir registrando su actividad, agregando al elemento con id ultimos-movimientos 
  * un elemento p con la descripción, por ejemplo, "Extraido $3000", "Depositado $500"
  * 5) Las funciones depositarDinero, extraerDinero y cambiarLimiteExtraccion deben llamar
  * al finalizar a actualizarInfoCuenta, y luego a mostrarInfoCuenta

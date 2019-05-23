@@ -1,0 +1,63 @@
+html, body {
+    background-color: #BC3B69;
+    height: 100%;
+    font-family: Roboto;
+}
+
+h1 {
+    font-size: 76px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 58px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.veggies {
+    max-width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+img {
+    margin: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .4s, box-shadow .4s, top .4s;
+    padding: 20px;
+    border-radius: 50%;
+    top: 0;
+    position: relative;
+}
+
+img:hover {
+    top: -20px;
+    background-color:#ecf0f1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button {
+    background-color: #bdc3c7;
+    text-align: center;
+    border-radius: 40px;
+    width: 300px;
+    line-height: 80px;
+    font-size: 60px;
+    user-select: none;
+    margin: 30px auto 90px auto;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+    background-color: #a0a1a1;
+    width: 320px;
+}
