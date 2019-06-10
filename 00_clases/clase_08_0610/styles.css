@@ -1,0 +1,26 @@
+html, body {
+    background-color: #BC3B69;
+    min-height: 100%;
+    font-family: 'Minecraft';
+    color: white;
+    font-size: 24px;
+}
+
+.column {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#contenedor-ejemplo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-shrink: 0;
+    flex-basis: 200px;
+    height: 200px;
+    outline: 1px solid black;
+    background: white;
+    margin: 20px;
+}
