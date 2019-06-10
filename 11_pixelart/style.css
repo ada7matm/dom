@@ -67,11 +67,12 @@ h2 {
     width: 15px;
     height: 15px;
     outline: 1px solid black;
-    display: inline-block;
 }
 
 #paleta {
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #seleccionado {
