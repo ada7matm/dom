@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inner HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <span class="navbar-brand mb-0 h1 text-white">Tarea</span>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <form action="" class="card bg-light p-3 mb-5">
+                    <p><b>Categoria</b></p>
+                    <div class="form-group">
+                        <label for="nueva-categoria">Seleccionar</label>
+                        <select class="form-control" id="categoria-actual"></select>
+                    </div>
+                </form>
+                <form action="" class="card bg-light p-3 mb-5">
+                    <p><b>Tarea</b></p>
+                    <div class="form-group">
+                        <label for="tarea">Descripción</label>
+                        <textarea class="form-control mb-3" id="tarea" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-2" id="agregar-tarea">Agregar</button>
+                </form>
+                <form action="" class="card bg-light p-3 ">
+                    <p><b>Categoria</b></p>
+                    <div class="form-group">
+                        <label for="nueva-categoria">Nombre</label>
+                        <input type="text" class="form-control" id="nueva-categoria">
+                    </div>
+                    <button type="button" class="btn btn-primary mb-2" id="agregar-categoria">Agregar</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 id="titulo-categoria" class="mb-5"></h1>
+                <div id="contenedor-tareas"></div>
+            </div>
+
+            <!-- Lo usamos de referencia! -->
+            <div class="card mb-3 hidden tarea">
+                <div class="card-body">
+                    <p class="card-text">Descripcion</p>
+                    <!-- <div class="d-flex">
+                        <a href="#!" class="card-link subir">Subir</a>
+                        <a href="#!" class="card-link bajar">Bajar</a>
+                        <a href="#!" class="card-link remover">Remover</a>
+                        <a href="#!" class="card-link editar">Editar</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="nomirar.js"></script>
+</body>
+
+</html>
