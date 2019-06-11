@@ -18,7 +18,7 @@ for (let i = 0; i < librosSeleccionables.length; i++) {
 
 for (let i = 0; i < estantes.length; i++) {
     estantes[i].onclick = function(){
-        if (biblioteca[i].length < 6) {
+        if (biblioteca[i].length < 5) {
             biblioteca[i].push(seleccionado);
             actualizarBiblioteca();
         }
