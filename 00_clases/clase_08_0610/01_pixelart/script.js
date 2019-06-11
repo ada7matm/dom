@@ -1,19 +1,16 @@
-/*
-  PARA COMPLETAR
-  - Completar las funciones de los botones borrarTodo, que deberia pintar todos los
-  pixeles de blanco, y la función pintarFondo, que debería pintar todos los pixeles
-  del color seleccionado.
- */
-
 const colores = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"];
 
 //NODOS
 const paleta = document.getElementById('paleta')
 const grilla = document.getElementById('grilla')
 const seleccionado = document.getElementById('seleccionado')
+const borrarTodo = document.getElementById('borrar-todo')
+const pintarFondo = document.getElementById('pintar-fondo')
+const pixels = document.getElementsByClassName('pixel')
 
 //VARIABLES
 let clickActivo = false
+let colorActual = 'White'
 
 //FUNCIONES
 
@@ -70,9 +67,26 @@ const crearPaleta = function(){
     /*-Al hacer click en un color, el elemento "seleccionado" deberia ponerse de dicho color.*/
     color.onclick = (function(){
       seleccionado.style.backgroundColor = colores[i]
+      colorActual = colores[i]
     })
 
     paleta.appendChild(color)
+  }
+}
+
+/* Completar las funciones de los botones borrarTodo, que deberia pintar todos los
+pixeles de blanco, y la función pintarFondo, que debería pintar todos los pixeles
+del color seleccionado. */
+
+borrarTodo.onclick = function(){
+  for(let i = 0; i < pixels.length; i++){
+    pixels[i].style.backgroundColor = 'White'
+  }
+}
+
+pintarFondo.onclick = function(){
+  for(let i = 0; i < pixels.length; i++){
+    pixels[i].style.backgroundColor = colorActual
   }
 }
 

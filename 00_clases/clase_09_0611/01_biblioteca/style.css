@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #BC3B69;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+.biblioteca {
+    width: 420px;
+    height: 420px;
+    background-image: url("biblioteca.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+}
+
+.estante {
+    height: calc(700px / 3);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 20px 20px;
+    -webkit-user-select: none;
+}
+
+.libro-seleccionable {
+    font-size: 60px;
+    transition: .3s;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+.libro-seleccionable.seleccionado {
+    font-size: 80px;
+}
+
+.libro {
+    font-size: 60px;
+}

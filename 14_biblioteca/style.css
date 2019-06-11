@@ -18,8 +18,8 @@ img {
 }
 
 .biblioteca {
-    width: 700px;
-    height: 700px;
+    width: 420px;
+    height: 420px;
     background-image: url("biblioteca.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@ img {
     -webkit-user-select: none;
 }
 
-.seleccion {
+.libro-seleccionable {
     font-size: 60px;
     transition: .3s;
     width: 100px;
@@ -53,10 +53,10 @@ img {
     cursor: pointer;
     -webkit-user-select: none;
 }
-.seleccion.seleccionado {
+.libro-seleccionable.seleccionado {
     font-size: 80px;
 }
 
 .libro {
-    font-size: 90px;
+    font-size: 60px;
 }
