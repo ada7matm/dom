@@ -1,16 +1,17 @@
 const biblioteca = [[],[],[]];
-const selecciones = document.getElementsByClassName('seleccion');
+const librosSeleccionables = document.getElementsByClassName('libro-seleccionable');
 const estantes = document.getElementsByClassName('estante');
+
 let seleccionado;
 
-for (let i = 0; i < selecciones.length; i++) {
-    selecciones[i].onclick = function(){
-        for (let j = 0; j < selecciones.length; j++) {
-            selecciones[j].classList.remove('seleccionado');
+for (let i = 0; i < librosSeleccionables.length; i++) {
+    librosSeleccionables[i].onclick = function(){
+        for (let j = 0; j < librosSeleccionables.length; j++) {
+            librosSeleccionables[j].classList.remove('seleccionado');
         }
 
-        seleccionado = selecciones[i].innerHTML;
-        selecciones[i].classList.add('seleccionado');
+        seleccionado = librosSeleccionables[i].innerHTML;
+        librosSeleccionables[i].classList.add('seleccionado');
     }    
 }
 
