@@ -18,8 +18,8 @@ img {
 }
 
 .biblioteca {
-    width: 700px;
-    height: 700px;
+    width: 420px;
+    height: 420px;
     background-image: url("biblioteca.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,5 +58,5 @@ img {
 }
 
 .libro {
-    font-size: 90px;
+    font-size: 60px;
 }
