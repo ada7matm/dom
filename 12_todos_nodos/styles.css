@@ -19,6 +19,6 @@ nav, .card-header, .btn {
     display: none;
 }
 
-.tarea.important .card-header {
+.tarea.destacado .card-header {
     background-color: #f44336;
 }

@@ -1,4 +1,4 @@
-const pokemons = [
+const pokemonsData = [
   {
     "id": 1,
     "name": {

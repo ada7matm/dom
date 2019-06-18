@@ -31,6 +31,10 @@
                 <form action="" class="card bg-light p-3 mb-5">
                     <p><b>Tarea</b></p>
                     <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control mb-3" id="titulo" />
+                    </div>
+                    <div class="form-group">
                         <label for="tarea">Descripción</label>
                         <textarea class="form-control mb-3" id="tarea" rows="3"></textarea>
                     </div>
@@ -52,14 +56,16 @@
 
             <!-- Lo usamos de referencia! -->
             <div class="card mb-3 hidden tarea">
+                <div class="card-header"></div>
                 <div class="card-body">
                     <p class="card-text">Descripcion</p>
-                    <!-- <div class="d-flex">
-                            <a href="#!" class="card-link subir">Subir</a>
-                            <a href="#!" class="card-link bajar">Bajar</a>
-                            <a href="#!" class="card-link remover">Remover</a>
-                            <a href="#!" class="card-link editar">Editar</a>
-                        </div> -->
+                    <div class="d-flex">
+                        <a href="#!" class="card-link subir">Subir</a>
+                        <a href="#!" class="card-link bajar">Bajar</a>
+                        <a href="#!" class="card-link destacar">Destacar</a>
+                        <a href="#!" class="card-link remover">Remover</a>
+                        <a href="#!" class="card-link editar">Editar</a>
+                    </div>
                 </div>
             </div>
 

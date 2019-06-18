@@ -74,10 +74,6 @@ main::-webkit-scrollbar-thumb
 	background-color: rgba(0, 0, 0, 0.383);
 }
 
-.oculto {
-    display: none;
-}
-
 h2 {
     text-align: center;
     margin-top: 20px;
@@ -148,4 +144,8 @@ input {
 #tipos-seleccionados img:hover,
 #filtro-tipos img:hover {
     opacity: .4;
+}
+
+.pokemon.oculto {
+    display: none;
 }

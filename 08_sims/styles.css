@@ -103,11 +103,16 @@ h1 {
     transition: .3s;
     color: #3a4773;
     padding-left: 0px;
+    user-select: none;
 }
 
 .action:hover {
     color: #8cc020;
     padding-left: 15px;
+}
+
+.azul {
+    background-color: #2196F3;
 }
 
 .verde {
