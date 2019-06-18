@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="column">
+        <div id="content">
+            <aside>
+                <img src="banner.png" alt="" class="banner">
+                    <div class="filtro">
+                    <h1>FILTROS</h1>
+                    <h2>NOMBRE</h2>
+                    <input type="text" id="busqueda">
+                    <h2>SELECCIONADO</h2>
+                    <div id="tipos-seleccionados"></div>
+                    <h2>TIPO</h2>
+                    <div id="filtro-tipos"></div>
+                </div>
+            </aside>
+            <main>
+
+            </main>
+        </div>
+    </div>
+    <div class="pokemon oculto">
+        <img class="imagen-pokemon" src="http://www.pokestadium.com/sprites/xy/seadra.gif" alt="">
+        <h3 class="nombre-pokemon">Seadra</h3>
+        <div class="tipos"></div>
+    </div>
+    <script src="data/pokedex.js"></script>
+    <script src="data/pokemon-id-to-gif-name.js"></script>
+    <script src="data/types.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

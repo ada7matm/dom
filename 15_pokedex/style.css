@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato';
+    overflow: hidden;
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background: linear-gradient(to bottom, #00c9ff, #92fe9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.column {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+aside {
+    width: 25%;
+    align-self: flex-start;
+}
+
+main {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    align-content: flex-start;
+}
+
+
+main::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: xrgba(245, 245, 245, 0.342);
+}
+
+main::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: rgba(245, 245, 245, 0.452);
+}
+
+main::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0, 0, 0, 0.383);
+}
+
+.oculto {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 0 0;
+    line-height: 35px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+
+input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    border: 0;
+    height: 25px;
+    outline: 0;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+.pokemon {
+    width: 23%;
+    height: 230px;
+    margin: 10px 0;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.imagen-pokemon {
+    margin: 0 auto;
+    display: block;
+}
+
+.nombre-pokemon {
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.pokemon .tipos {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon .tipos img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+#filtro-tipos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tipos-seleccionados img,
+#filtro-tipos img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#tipos-seleccionados img:hover,
+#filtro-tipos img:hover {
+    opacity: .4;
+}
