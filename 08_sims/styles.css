@@ -16,15 +16,28 @@ img {
     margin-top: 50px;
     margin-left: 50px;
     position: absolute;
+    max-width: 400px;
 }
 
 h1 {
-    margin-top: 0;
+    margin-top: 40px;
     color: #3a4773;
+    text-transform: uppercase;
 }
 
-.outer-actions,
-.outer-stats {
+
+h2 {
+    margin: 3px 0;
+    color: hsl(226, 33%, 34%);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.info h1 {
+    margin-top: 0;
+}
+
+.outer-container {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 10px;
@@ -37,8 +50,7 @@ h1 {
     z-index: 1;
 }
 
-.actions,
-.stats {
+.container {
     background-color: rgba(255, 255, 255);
     border-radius: 10px;
     border: 10px solid rgba(255, 255, 255, 0.3);
@@ -133,4 +145,17 @@ h1 {
     background-color: #F44336;
 }
 
+#nombre {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation span {
+    margin: 0 10px;
+    cursor: pointer;
+}
 

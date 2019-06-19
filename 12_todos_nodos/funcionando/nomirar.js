@@ -9,8 +9,7 @@ const tituloCategoria = document.getElementById('titulo-categoria');
 const tareas = [];
 const listaTareas = document.getElementById('contenedor-tareas');
 
-
-const Tarea = {
+const tarea = {
     titulo: '',
     descripcion: '',
     categoria: '',
@@ -91,13 +90,13 @@ categoriaActual.onchange = function() {
 
 agregarTareaBoton.onclick = function(){
     if (tituloTarea.value && textoTarea.value && categoriaActual.value) {
-        const tarea = Object.create(Tarea);
-        Object.assign(tarea, {
+        const nuevaTarea = Object.create(tarea);
+        Object.assign(nuevaTarea, {
             titulo: tituloTarea.value,
             descripcion: textoTarea.value,
             categoria: categoriaActual.value
         });
-        tareas.push(tarea);
+        tareas.push(nuevaTarea);
         mostrarTareas();
     }
 }

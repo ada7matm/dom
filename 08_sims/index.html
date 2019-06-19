@@ -10,48 +10,59 @@
 </head>
 <body>
     <img src="character.png" alt="">
-    <div class="outer-stats">
-        <div class="stats">
-            <h1>STATS</h1>
-            <div class="empty-bar">
-                <div class="bar" id="barra-hambre">
-                    <div class="circle">
-                        <i class="fas fa-utensils icon"></i>
+    <div class="outer-container">
+        <div class="container">
+            <section class="info">
+                <h1 id="nombre">Lisa</h1>
+                <span class="navigation">
+                    <span id="anterior">👈</span>
+                    <span id="siguiente">👉</span>
+                </span>
+                <h2>📅 <span id="edad">28</span> años</h2>
+                <h2>🏙️ <span id="ciudad">Capital Federal</span></h2>
+                <h2>👩‍💼 <span id="profesion">Programadora</span></h2>
+                <h2>☑️ <span id="curiosidad">Crack en JS</span></h2>
+            </section>
+            <section class="stats">
+                <h1>STATS</h1>
+                <div class="empty-bar">
+                    <div class="bar" id="barra-hambre">
+                        <div class="circle">
+                            <i class="fas fa-utensils icon"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="empty-bar">
-                <div class="bar" id="barra-energia">
-                    <div class="circle">
-                        <i class="fas fa-bed icon"></i>
+                <div class="empty-bar">
+                    <div class="bar" id="barra-energia">
+                        <div class="circle">
+                            <i class="fas fa-bed icon"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="empty-bar">
-                <div class="bar" id="barra-dinero">
-                    <div class="circle">
-                        <i class="fas fa-dollar-sign icon"></i>
+                <div class="empty-bar">
+                    <div class="bar" id="barra-dinero">
+                        <div class="circle">
+                            <i class="fas fa-dollar-sign icon"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="empty-bar">
-                <div class="bar" id="barra-felicidad">
-                    <div class="circle">
-                        <i class="fas fa-laugh-beam icon"></i>
+                <div class="empty-bar">
+                    <div class="bar" id="barra-felicidad">
+                        <div class="circle">
+                            <i class="fas fa-laugh-beam icon"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="outer-actions">
-        <div class="actions">
-            <h1>ACCIONES</h1>
-            <div class="action" id="dormir">DORMIR</div>
-            <div class="action" id="morfar">MORFAR</div>
-            <div class="action" id="laburar">LABURAR</div>
-            <div class="action" id="salir">SALIR DE JODA</div>
-            <div class="action" id="ejercitar">EJERCITAR</div>
-            <div class="action" id="viciar">VICIAR</div>
+            </section>
+            <section class="actions">
+                <h1>ACCIONES</h1>
+                <div class="action" id="dormir">🛌 DORMIR</div>
+                <div class="action" id="morfar">🍽️ MORFAR</div>
+                <div class="action" id="laburar">💼 LABURAR</div>
+                <div class="action" id="salir">🍺 SALIR DE JODA</div>
+                <div class="action" id="ejercitar">🏋️‍ EJERCITAR</div>
+                <div class="action" id="viciar">🎮 VICIAR</div>
+            </section>
         </div>
     </div>
     <script src="script.js"></script>
