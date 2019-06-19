@@ -26,6 +26,6 @@ y devuelva *true* si hay al menos un número impar en dicho array, o *false* si 
 
 6. Teniendo en cuenta que un string es un array, crear una función **esCapicua**, que tome por parámetro un string y devuelva *true* si es capicúa, es decir, si puede leerse igual de izquierda a derecha que de derecha a izquierda, o *false* si no lo es. 
 
-7. Resolver el ejercicio 16_ahorcado (ver instrucciones en script.js)
+7. Resolver el ejercicio 16_ahorcado (ver instrucciones en script.js) (hacer pull del repo de DOM)
 
-8. Resolver el ejercicio 17_tateti (ver instrucciones en script.js)
+8. Resolver el ejercicio 17_tateti (ver instrucciones en script.js) (hacer pull del repo de DOM)
