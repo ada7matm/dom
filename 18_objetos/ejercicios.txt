@@ -1,0 +1,23 @@
+Hacer las siguientes funciones:
+
+1. estudiantesPorHechizo, que tome por parámetro el nombre de un hechizo y devuelva un array con todos lxs estudiantes que tengan ese hechizo como hechizoPreferido
+
+2. estudiantesConMasAmigxsQue, que tome por parametro un numero y devuelva un array con todos lxs estudiantes que tengan un número de amigxs mayor o igual a el número pasado por parámetro
+
+3. estudiantesConFamiliares, que tome por parámetro un array con nombres de familiares (p.ej, ["Sapo", "Lechuza"]), y devuelva un array con lxs estudiantes que tengan cuyo familiar sea alguno de los incluidos en el parámetro
+
+4. obtenerPromedioDeEstudiante, que tome por parámetro unx estudiante (que se saca del array estudiantes) y devuelva el promedio total de todas las materias
+
+5. estudiantesConPromedioMayorA, que tome por parámetro un número y devuelva un array con lxs estudiantes que tengan un promedio total mayor a dicho número (usar la función anterior)
+
+6. mejoresEstudiantesPorCasa, que tome por parámetro el nombre de una casa, y devuelva lxs estudiantes de dicha casa cuyo promedio total es mayor a 6
+
+7. casaConMejoresEstudiantes, que devuelva el nombre de la casa que tiene más cantidad de estudiantes con promedio total mayor a 6 (usar la función anterior)
+
+7. estudiantesPorMateriaAprobada, que tome por parámetro el nombre de una materia, y devuelva una array con lxs estudiantes que tienen en dicha materia un promedio superior a 6
+
+8. cantidadDeEstudiantesPorCasa, que tomo por parámetro el nombre de una casa, y devuelva un número con cantidad de estudiantes que pertenecen a esa casa, incluyendo en la cuenta a todxs lxs amigxs de cada estudiante 
+
+9. estudiantesConAmigxsPorCasa, que tomo por parámetro el nombre de una casa, y devuelva un array con todos los estudiantes que tengan al menos unx amigx que pertenezca a dicha casa
+
+10. estudiantesConAmigxsConMismoHechizo, que tome por parámetro el nombre de un hechizo, y devuelva un array con lxs estudiantes que tengan al menos unx amigx con su mismo hechizo preferido 
