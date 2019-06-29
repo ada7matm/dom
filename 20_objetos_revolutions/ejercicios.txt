@@ -1,22 +1,73 @@
 Hacer las siguientes funciones:
 
 
-. artistasSolistas, que devuelva un array con lxs artistas que sean solistas
+. empleadxsQueHacenGuardia, que devuelva un array con todxs lxs empleadxs que hacen guardia
 
-. artistasPorEdad, que tome un parámetro "edad" y devuelva un array con lxs artistas que tengan dicha edad
+. empleadxsPorPais, que tome por parámetro el nombre de un país y devuelva un array con todxs lxs empleadxs que son de dicho país
 
-. cantidadDeArtistasPorInstrumento, que tome un parámetro instrumento "instrumento" y devuelva un número indicando la cantidad de artistas que tocan dicho instrumento
+. empleadxsPorArea, que tome por parámetro el nombre de un área y devuelva un array con todxs lxs empleadxs que son de dicho área
 
-. cantidadDeArtistasPorGenero, que tome un parámetro "genero" y devuelva un número indicando la cantidad de artistas que tocan dicho género
+. empleadxsConSueldoMayorA, que tome por parámetro un número como sueldo y devuelva un array con todxs lxs empleadxs que tengan un sueldo mayor a dicho número
 
-. artistasConMasDiscosQue, que tome por parámetro "cantidadDeDiscos" y devuelva un array con lxs artistas que tiene más de esa cantidad de discos
+. empleadxsConMasLenguajes, que tome por parámetro un número y devuelva un array con aquellxs empleadxs que sepan más lenguajes que dicho número
 
-. artistaTocoEnAnio, que tome por parámetro un parámetro "artista" y "anio", y devuelva true si dicho artista tocó su último recital en dicho año
+. sueldoPromedioEmpleadxs, que devuelva el sueldo promedio de todos los empleados
 
-. artistaConMasEntradasVendidas, que devuelva el objeto artista que vendió más entradas en su último recital
+. sueldoPromedioPorSeniority, que tome por parámetro un seniority, y devuelva el sueldo promedio de todxs lxs empleadxs que tengan ese seniority
 
-. artistaConMayorRecaudacion, que devuelva el objeto artista que más recaudó en su último recital (entradasVendidas * costoEntradas)
+. buscarEmpleadxs, que tome por parámetros area, puesto y seniority, y devuelva un array con lxs empleadxs que pertenezcan a dicha area, puesto y seniority
 
-. artistasConDiscoEnAnio, que tome por parámetro un parámetro "anio", y devuelva true un array con los artistas que tengan publicado al menos un disco en dicho año
+. empleadxSabeLenguaje, que tome por parámetro un objeto empleadx (elemento del array empleadxs) y un lenguaje y devuelva true si dicho empleadx sabe dicho lenguaje
 
-. artistaConMasCopias, que devuelva el objeto artista que más copias de discos en total vendió
+. empleadxsQueSabenLenguaje, que tome por parámetro	un lenguaje y devuelva todxs lxs empleadxs que saben dicho lenguaje (usar la función anterior)
+
+. empleadxsQueSabenLenguajes, que tome por parámetro un array de lenguajes y devuelva un array con aquellxs empleadxs que sepan todos esos lenguajes
+
+. empleadoxsConMejorSueldo, que devuelva un array con los 10 mejores empleadxs pagos 
+
+. obtenerTitulosCompletos, que devuelva un array donde cada elemento es un string con la forma "nombre, puesto seniority, area", p.ej.: "Nadia Conrad, Senior Backend Developer, Desarrollo", habiendo un elemento por cada empleadx (usar map)
+
+. obtenerInfoPersonal, que devuelva un array donde cada elemento es un objeto con las propiedades 
+    * nombre 
+    * pais 
+    * edad 
+habiendo un elemento por cada empleadx, y donde cada propiedad se corresponde a la propiedad del objeto original (usar map)
+
+. obtenerInfoPuestos, que devuelva un array donde cada elemento es un objeto con las propiedades 
+    * nombre 
+    * area 
+    * puesto 
+    * seniority 
+habiendo un elemento por cada empleadx, y donde cada propiedad se corresponde a la propiedad del objeto original (usar map)
+
+. obtenerInfoSeniority, que devuelva un array donde cada elemento es un objeto con las propiedades 
+    * nombre 
+    * seniority 
+    * sueldo 
+    * cantidadLenguajes 
+habiendo un elemento por cada empleadx, y donde cada propiedad se corresponde a la propiedad del objeto original, excepto cantidadLenguajes, que es un número indicando la cantidad de lenguajes que sabe (usar map) 
+
+. obtenerInfoPagos, que devuelva una array donde cada elemento es un objeto con las propiedades
+    * nombre
+    * sueldoBruto
+    * obraSocial
+    * jubilacion
+    * sueldoNeto
+habiendo un elemento por cada empleadx, donde
+    * sueldoBruto es el sueldo del objeto original
+    * obraSocial es el 3% del sueldoBruto
+    * jubilacion es el 11% del sueldoBruto
+    * sueldoNeto es el resultado de restarle a sueldoBruto los valores de obraSocial y jubilacion
+(usar map)
+
+
+Para los ejercicios de map, recuerden que map devuelve convierte cada elemento ("mapea") a un nuevo elemento, entonces podemos definir que lo convierta a un nuevo objeto con las propiedades que nos interesa. Por ejemplo, si sólo queremos quedarnos con las propiedades nombre y haceGuardia, haríamos
+
+const infoEmpleado = empleadx => {
+    nombre: empleadx.nombre,
+    haceGuardia: empleadx.haceGuardia
+}
+
+const empleadxsQueHacenGuardia => empleadxs.map(infoEmpleado)
+
+Como el objeto que definimos lo estamos creando desde cero, podemos definirle incluso propiedades que no existan en el objeto original, y cuyo valor sea el resultado de alguna otra operación
