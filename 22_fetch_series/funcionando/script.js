@@ -76,4 +76,4 @@ const updateEpisodes = (id, season) => {
 }
 
 
-updateSerie('stranger');
+updateSerie('game of');
